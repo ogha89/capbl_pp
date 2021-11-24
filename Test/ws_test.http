@@ -1,0 +1,744 @@
+## List Books with their current stocks
+
+
+GET http://localhost:4004/browse/outListClientes
+
+###
+
+POST http://localhost:4004/browse/inListClientes
+Content-Type: application/json
+
+{ 
+    //"codCliente":"1000000002"
+    "codCliente":"1000000008"
+}
+ //   "fechaFin": "20201101",20210401
+ //   "fechaInicio": "20201030",20211031,53946
+###
+//
+POST http://localhost:4004/browse/infoPedido
+Content-Type: application/json
+
+{
+    "codCliente": "1000001051",
+    "codDestinatario": "",
+     "estado": "1",
+    "fechaFin": "20211110",
+    "fechaInicio": "20211103"      
+   
+}
+###
+
+POST http://localhost:4004/browse/transportistas
+Content-Type: application/json
+
+{ 
+    "codTransportista": ""
+}
+
+###
+
+POST http://localhost:4004/browse/placaCisterna
+Content-Type: application/json
+
+{ 
+    "codTransportista": "8000000335"
+}
+
+###
+
+POST http://localhost:4004/browse/infoCisterna
+Content-Type: application/json
+
+{ 
+    "placa": "PEAUC434"
+     //"placa": "PEW2B922"
+}
+
+###
+//2295//6509//1033
+POST http://localhost:4004/browse/infoTracto
+Content-Type: application/json
+
+{ 
+    "numVehiculo": "10436"
+}
+
+###
+
+POST http://localhost:4004/browse/listaConductor
+Content-Type: application/json
+
+{ 
+    "numConductor": ""
+}
+
+###
+
+POST http://localhost:4004/browse/infoConductor
+Content-Type: application/json
+
+{ 
+    "idConductor": "PE41695092"
+}
+
+###
+POST http://localhost:4004/browse/infoSCOP
+Content-Type: application/json
+
+{ 
+    "codSCOP": "11985991636"
+}
+
+# "codSCOP": "60009591061"
+//10039415424 conplaca sin material
+//10039415310//10039623363
+//10039455126
+//10039485825
+//10039415424
+//10039445023
+//10039475722
+//10039435516
+//10039495814
+//10039455012
+
+###
+###
+POST http://localhost:4004/browse/syncSCOP
+Content-Type: application/json
+
+{ 
+    "codSCOP": "10039790049",
+    "codWERKS": "1001"
+}
+###
+POST http://localhost:4004/browse/actPrdclides
+Content-Type: application/json
+
+{ 
+    "codCLI": "1000000324",
+    "codDES": "85069"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:4004/browse/listaSCOP
+Content-Type: application/json
+
+{     
+    "codCliente"      : "1000000324",
+    "codDestinatario" : "6821",
+    "tipoSCOP"        : "L",
+    "fechaInicio"     : "20210818",
+    "fechaFin"        : "20210818",
+    "codEstado"       : ""
+}
+
+###
+
+POST http://localhost:4004/browse/cierraAnulaSCOP
+Content-Type: application/json
+
+{     
+    "codSCOP"      : "10039693146",
+    "codEstado"       : "08"
+}
+
+###
+
+POST http://localhost:4004/browse/infoPagos
+Content-Type: application/json
+
+{     
+    "codCliente"  : "1000000324",
+    "fechaFin"    : "20210524",
+    "fechaInicio" : "20210517"
+}
+
+###
+
+POST http://localhost:4004/browse/infoViajes
+Content-Type: application/json
+
+{ 
+    "codCliente": "1000000324",
+    "codDestinatario": "",
+    "codCentro": "",
+    "estado": "",
+    "fechaInicio": "20211101",
+    "fechaFin": "20211114"
+}
+
+###
+
+POST http://localhost:4004/browse/infoDetalleTransporte
+Content-Type: application/json
+
+{ 
+    "codCliente": "",
+    "numTransporte": "8003228979",
+    "codDestinatario": ""
+}
+###
+POST http://localhost:4004/browse/listaDestinatarios
+Content-Type: application/json
+
+{ 
+    "codCliente": "1000000185"
+}
+
+###
+
+POST http://localhost:4004/browse/infoProductos
+Content-Type: application/json
+
+{ 
+    "codCliente": "1000001930",
+    "codDestinatario": "3089",
+    "codCentro": "1001"
+}
+
+###
+
+POST http://localhost:4004/browse/enviocorreo
+Content-Type: application/json
+
+{
+    "emailemisor": "portalcliente@petroperu.com.pe",
+    "emailreceptor": "oherrera@rivercon.com",
+    "bcc": "oscarhxzz@gmail.com",
+    "asunto": "Hola tienes un correo!",
+    "messagehtml": "<p>Hola Mundo html<p>",
+    "texto"         : "_",
+    "adjunto_path" : [
+        {
+            "filename": "text1.pdf",
+            "content": "aGVsbG8gd29ybGQh",
+            "encoding": "base64"
+        }
+    ]
+    //"adjunto_path": [
+    //    {   
+    //        //use URL as an attachment
+    //        "filename": "license.txt",
+    //        "path": "https://raw.github.com/nodemailer/nodemailer/master/LICENSE"
+    //    }
+    //]
+        
+}
+
+
+###
+
+POST http://localhost:4004/browse/infoDetalleEntrega
+Content-Type: application/json
+
+{ 
+    "codCliente": "1000000324",
+    "numEntrega": "85147166",
+    "codDestinatario": ""
+}
+
+###
+
+POST http://localhost:4004/browse/infoDetalleFactura
+Content-Type: application/json
+
+{ 
+    "codCliente": "1000000324",
+    "numPedido": "5129779",
+    "codDestinatario": ""
+}
+###
+
+
+POST http://localhost:4004/browse/cotizacion
+Content-Type: application/json
+
+{ 
+    "codCentro": "1001",
+    "codCliente": "1000000227",
+    "codDestinatario": "68842",
+    "fecha": "20210703",
+    "items": [ 
+    { 
+        "ID": 1,
+        "areaVta": "10002010",
+        "codMat": "30417",
+        "cantidad": 10000
+    }
+    ]
+}
+###
+
+POST http://localhost:4004/browse/cabSaldo
+Content-Type: application/json
+
+{ 
+    "codCliente": "1000000324"
+}
+###
+
+POST http://localhost:4004/browse/detSaldo
+Content-Type: application/json
+
+{ 
+    "codCliente": "1000000227"
+}
+###
+
+POST http://localhost:4004/browse/regPedido
+Content-Type: application/json
+
+{ 
+    "codCliente": "1000000324",
+    "codDestinatario": "85069",
+    "codCentro": "1001",
+    "fechaPed": "20211022",
+    "flagComp": "",
+    "flagCont": "",
+    "codSCOP": "10039790049",
+    "areaVta": "10002010",
+    "email": "oherrera@rivercon.com",
+    "detPedido": [ 
+    { 
+        "ID": 1,
+        "codProd": "30015",
+        "volumen": 100
+    }
+    ],
+
+    "codTransportista": "",
+    "dniConductor": "",
+    "tipVeh": "",
+    "numVeh": "",
+    //,
+    
+    "detTransporte": [ 
+    //{ 
+    //    "ID": 1,
+    //    "numCom": "001",
+    //    "codProd": "30036",
+    //    "volumen": 1000
+    //}
+    //,
+    //{ 
+    //    "ID": 2,
+    //    "numCom": "002",
+    //    "codProd": "30088",
+    //    "volumen": 300
+    //}
+    ]
+}
+###
+
+POST http://localhost:4004/browse/infoRecalculaPedido
+Content-Type: application/json
+
+{ 
+    "ID": 1,
+    "listPedidos": [ 
+    { 
+        "pedido": "5130573"
+    }
+    ]
+
+}
+
+###
+
+POST http://localhost:4004/browse/regTransporte
+Content-Type: application/json
+
+{
+    "tipVeh": "CTCI",
+    "numVeh": "6483",
+    "fechaTransporte" : "20210512",
+    "codTransportista": "8000000335",
+    "dniConductor": "PE00016756",
+    
+    "detTransporteT": [
+    {
+        "ID": 1,
+        "numCom": "1",
+        "numPedido": "5130144",
+        "posPed": "000010",
+        "codMat": "30019",
+        "volPos": 1000
+    },
+    {
+        "ID": 2,
+        "numCom": "2",
+        "numPedido": "5130143",
+        "posPed": "000010",
+        "codMat": "30027",
+        "volPos": 1000
+    },
+    {
+        "ID": 3,
+        "numCom": "3",
+        "numPedido": "5130144",
+        "posPed": "000010",
+        "codMat": "30019",
+        "volPos": 1000
+    },
+    {
+        "ID": 4,
+        "numCom": "4",
+        "numPedido": "5130143",
+        "posPed": "000010",
+        "codMat": "30027",
+        "volPos": 1000
+    },
+    {
+        "ID": 5,
+        "numCom": "5",
+        "numPedido": "5130144",
+        "posPed": "000010",
+        "codMat": "30019",
+        "volPos": 1000
+    },
+    {
+        "ID": 6,
+        "numCom": "6",
+        "numPedido": "5130143",
+        "posPed": "000010",
+        "codMat": "30027",
+        "volPos": 1000
+    },
+    {
+        "ID": 7,
+        "numCom": "7",
+        "numPedido": "5130144",
+        "posPed": "000010",
+        "codMat": "30019",
+        "volPos": 1000
+    },
+    {
+        "ID": 8,
+        "numCom": "8",
+        "numPedido": "5130143",
+        "posPed": "000010",
+        "codMat": "30027",
+        "volPos": 1000
+    },
+    {
+        "ID": 9,
+        "numCom": "9",
+        "numPedido": "5130136",
+        "posPed": "000010",
+        "codMat": "30019",
+        "volPos": 1000
+    },
+    {
+        "ID": 10,
+        "numCom": "10",
+        "numPedido": "5130136",
+        "posPed": "000010",
+        "codMat": "30019",
+        "volPos": 1000
+    }
+    ],
+    
+    "pedidoT": [
+    {
+        "numPedido": "5130144",
+        "codCliente": "1000000227",
+        "codDestinatario": "68842",
+        "codCentro": "5103",
+        "codSCOP": "10039465365",
+        "fechaPedido": "20210512"
+    },
+    {
+        "numPedido": "5130143",
+        "codCliente": "1000000227",
+        "codDestinatario": "68842",
+        "codCentro": "5103",
+        "codSCOP": "10039495064",
+        "fechaPedido": "20210512"
+    },
+    {
+        "numPedido": "5130136",
+        "codCliente": "1000000227",
+        "codDestinatario": "68842",
+        "codCentro": "5103",
+        "codSCOP": "10039485075",
+        "fechaPedido": "20210512"
+    }
+    ]
+}
+
+###
+
+
+POST http://localhost:4004/browse/getDocTransporte
+Content-Type: application/json
+
+{
+    "shNumber"               : "8003227888"
+}
+###
+
+POST http://localhost:4004/browse/anulaPedido
+Content-Type: application/json
+
+{
+    "numPedido"               : "5132155"
+}
+###
+
+POST http://localhost:4004/browse/getListaOrdenPedidoPorSCOP
+Content-Type: application/json
+
+{
+    "claveUsuario"               : "P0rt4l$3s",
+    "loginUsuario"               : "3379100",
+    "codigoAutorizacion"         : "10039671966"
+    // "codigoError"                : "",
+    // "codigoMayoristaEquivalente" : "",
+    // "codigoPlanta"               : "",
+    // "codigoPlantaEquivalente"    : "",
+    // "codigoUsuario"              : "",
+    // "fechaFin"                   : "",
+    // "fechaInicio"                : "",
+    // "fechaRegistro"              : "",
+    // "fechaVenta"                 : "",
+    // "horaFin"                    : "",
+    // "horaInicio"                 : "",
+    // "horaRegistro"               : "",
+    // "idDetalleDivision1"         : "",
+    // "idDetalleDivision2"         : "",
+    // "placaTransporte"            : "",
+    // "resultado"                  : "",
+    // "ruc"                        : "",
+    // "tipoUsuario"                : ""
+}
+
+###
+
+## POST http://localhost:4004/browse/getListaOrdenPedido
+
+POST http://localhost:4004/browse/getListaOrdenPedido
+Content-Type: application/json
+
+{
+    "claveUsuario"               : "P0rt4l$3s",
+    "loginUsuario"               : "3379100",
+    "codigoAutorizacion"         : ""
+    //"codigoError"                : "",
+    //"codigoMayoristaEquivalente" : "",
+    //"codigoPlanta"               : "",
+    //"codigoPlantaEquivalente"    : "",
+    //"codigoUsuario"              : "",
+    //"fechaFin"                   : "",
+    //"fechaInicio"                : "",
+    //"fechaRegistro"              : "",
+    //"fechaVenta"                 : "",
+    //"horaFin"                    : "",
+    //"horaInicio"                 : "",
+    //"horaRegistro"               : "",
+    //"idDetalleDivision1"         : "",
+    //"idDetalleDivision2"         : "",
+    //"placaTransporte"            : "",
+    //"resultado"                  : "",
+    //"ruc"                        : "",
+    //"tipoUsuario"                : ""
+}
+
+###
+
+POST http://localhost:4004/browse/creaSCOP
+Content-Type: application/json
+
+{
+    "loginUsuario"               : "0682100",
+    "claveUsuario"               : "87654321",
+    "TipoTransaccion"            : "M",
+    "CodigoMayoristaEquivalente" : "15",
+    "CodigoPlantaEquivalente"    : "09",
+    "PlacaTransporte"            : "C0O-938",
+    "Cola"                       : "C",
+    "detSCOP" : [
+    {
+        "ID" : 1,
+        "cantidadSolicitada" : 100,
+        "codigoProducto" : "49"
+    }
+    ]
+}
+
+###
+
+POST http://localhost:4004/browse/creaSCOPGLP
+Content-Type: application/json
+
+{
+    "loginUsuario"                      : "0682100",
+    "claveUsuario"                      : "87654321",
+    "codigoOsinergComprador"            : "6821",
+    "codigoOsinergVendedor"             : "33791",
+    "codigoOsinergPlantaAbastecimiento" : "18",
+    "detSCOPGLP" : [
+    {
+        "ID" : 1,
+        "cantidadSolicitada" : "100",
+        "codigoProducto" : "49",
+        "unidadMedida" : "KGR"
+    }
+    ]
+}
+
+###
+
+POST http://localhost:4004/browse/consultaHistorica
+Content-Type: application/json
+
+{
+    "fechaActualizacion"         : "23/08/2021",
+    "codigoOsinergmin"           : "6821"
+}
+//"19868"//6821
+
+###
+
+POST http://localhost:4004/browse/regPrecio
+Content-Type: application/json
+
+{
+    "loginUsuario"               : "0682100",
+    "claveUsuario"               : "87654321",
+    "detPrecio" : [
+        {
+            "ID": 1,
+            "codigoProducto": "04",
+            "precio": "10",
+            "codigoUnidad": ""
+        },
+        {
+            "ID": 2,
+            "codigoProducto": "72",
+            "precio": "12",
+            "codigoUnidad": ""
+        },
+        {
+            "ID": 3,
+            "codigoProducto": "73",
+            "precio": "9",
+            "codigoUnidad": ""
+        }
+    ]
+}
+//"19868"//6821//lsuyo@rivercon.com"//20100459672-01-FA02-14263.xml
+
+###
+
+ POST http://localhost:4004/browse/infoUsuario
+ Content-Type: application/json
+
+ {
+     "ID"     : 1,
+     "nameId" : "oherrera@rivercon.com"
+ }
+
+###
+
+POST http://localhost:4004/browse/cabInfoUsuario
+Content-Type: application/json
+
+{
+    "ID"     : 1,
+    "detInfoUsuario" : [
+        {
+            "ID" : 1,
+            "nameId": "oherrera@rivercon.com"
+        },
+        {
+            "ID" : 2,
+            "nameId": "oherrera@rivercon.com"
+        },
+        {
+            "ID" : 3,
+            "nameId": "oherrera@rivercon.com"
+        }
+    ]
+}
+###
+ POST http://localhost:4004/browse/obtUser
+ Content-Type: application/json
+
+ {
+     "ID"     : 1
+    
+ }
+
+
+###
+POST http://localhost:4004/browse/anulSCOP
+Content-Type: application/json
+
+{
+    "loginUsuario"       : "0682100",
+    "claveUsuario"       : "87654321",
+    "codSCOP"            : "10039633084",
+    "detAnulSCOP" : [
+    {
+        "ID" : 1,
+        "codigoProducto" : "40",
+        "codigoEstado" : "08"
+    }
+    ]
+}
+
+###
+
+POST http://localhost:4004/browse/actEstadoTransp
+Content-Type: application/json
+
+{
+    "ID" : 1,
+    "detActEstadoTransp" : [
+        {
+            "codCliente"      : "1000000185",
+            "codDestinatario" : "85938",
+            "transporte"      : "8003228565",
+            "estado"          : "Y060",
+            "fecha"           : "20210803",
+            "hora"            : "232900"
+        }
+    ]
+}
+
+###
+
+POST http://localhost:4004/browse/cierreSCOPGLP
+Content-Type: application/json
+
+{
+    "loginUsuario"              : "0682100",
+    "claveUsuario"              : "87654321",
+    "codSCOP"                   : "60020004515",
+    "codOsinergComprador"       : "6821",
+    "codOsinergVendedor"        : "33791",
+    "detCierreSCOPGLP" : [
+    {
+        "ID" : 1,
+        "codigoProducto" : "49",
+        "codigoEstado" : "06",
+        "cantRecibida" : "100",
+        "unidadMedida" : "KGR"
+    }
+    ]
+}
+
+###
